@@ -20,8 +20,9 @@
 
 	<h3>Photo Cache</h3>
 
-  	<%= f.fields_for :photocache do |beat_form| %>
-  		<%= beat_form.file_field :picture %>
+  		<%= f.fields_for :photos do |photo_form| %>
+  		<%= photo_form.file_field :photo %>
+
   	<% end %>
 
   	<hr/>

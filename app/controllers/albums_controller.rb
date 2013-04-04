@@ -26,6 +26,7 @@ class AlbumsController < ApplicationController
   def new
     @album = Album.new
 
+    3.times { @album.photos.build }
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @album }
